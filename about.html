@@ -4,18 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>劉柏岑簡介</title>
+
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		h1 {color:blue; font-size:60px;}
+		h2 {color:#33ff33; font-size:40px;}
+	</style>
+
+<script>
+		function change1() {
+  			document.getElementById("pic").src = "ai生圖.jpg";
+  			document.getElementById("h1T").innerText = "靜宜大學";
+  			document.getElementById("h2text").innerText = "資管2B";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "Designer.jpeg";
+  			document.getElementById("h1T").innerText = "劉柏岑";
+  			document.getElementById("h2text").innerText = "Liu-Po Tsen";
+		}
+	</script>
+
 </head>
 <body>
 
 	<table width="" ="60%">
 		<tr>
 			<td>
-				<img src="ai生圖.jpg"width="120%"></img>
+				<img src="ai生圖.jpg"width="120%"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 			</td>
+
 			<td>
-				<h1>劉柏岑</h1>
-				<h2>Liu-Po Tsen</h2>
+				<h1 id="h1T">劉柏岑</h1>
+				<h2 id="h2text">Liu-Po Tsen</h2>
 			</td>
+
 		</tr>
 	</table>	
 
