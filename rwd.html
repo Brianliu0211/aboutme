@@ -11,7 +11,10 @@
 		h2 {color:#FFD306; font-size:40px;}
 	</style>
 
-<script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
 		function change1() {
   			document.getElementById("pic").src = "ai生圖.jpg";
   			document.getElementById("h1T").innerText = "靜宜大學";
@@ -34,24 +37,36 @@
 		</ul>
 	</nav>
 
-	<main>
+	<main class="container-fluid bg-primary text-white text-center">
+
 		<img src="ai生圖.jpg"width="120%"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
-				
-		<h3 id="Brian">劉柏岑(Liu-Po Tsen)</h3>
-		個人網頁：<a href="https://www1.pu.edu.tw/~tcyang">
-		FB：<a href="https://www.facebook.com/profile.php?id=100012334745419&locale=zh_TW">https://www.facebook.com/profile.php?id=100012334745419&locale=zh_TW</a><br>
-		Tel: <a href="tel:0426328001,18110">04-26328001#18110</a><br>
-		E-Mail: <a href="brain2013bb@gmail.com">brain2013bb@gmail.com</a><br>
 
-		<h3 id="soundtrack">電影配樂</h3>
-		大象席地而坐電影配樂<br>
-		<audio controls>
-			<source src="elephant.mp3" type="audio/mP3">
-		</audio><br>
+				<div class="row">
+					<section class="col-lg-4">				
+						<h3 id="Brian">劉柏岑(Liu-Po Tsen)</h3>
+						個人網頁：<a href="https://www1.pu.edu.tw/~tcyang">
+						FB：<a href="https://www.facebook.com/profile.php?id=100012334745419&locale=zh_TW">https://www.facebook.com/profile.php?id=100012334745419&locale=zh_TW</a><br>
+						Tel: <a href="tel:0426328001,18110">04-26328001#18110</a><br>
+						E-Mail: <a href="brain2013bb@gmail.com">brain2013bb@gmail.com</a><br>
+					</section>
 
-		<h3 id="youtube">推薦影片</h3>
-		不要去臺灣<br>
-		<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+				<section class="col-lg-4">
+					<h3 id="soundtrack">電影配樂</h3>
+					大象席地而坐電影配樂<br>
+					<audio controls>
+						<source src="elephant.mp3" type="audio/mP3">
+					</audio><br>
+				</section>
+
+
+				<section class="col-lg-4">
+					<h3 id="youtube">推薦影片</h3>
+					不要去臺灣<br>
+					<iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+				</section>
+
+
+				</div>
 	</main>
 
 	<footer>
@@ -59,5 +74,5 @@
 	</footer>
 
 </body>
-</html> 
+</html> 	
 	
